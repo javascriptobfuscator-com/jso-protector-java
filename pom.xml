@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.javascriptobfuscator</groupId>
+    <artifactId>jso-protector</artifactId>
+    <version>0.1.0</version>
+    <packaging>jar</packaging>
+
+    <name>jso-protector</name>
+    <description>Java client for the JavaScript Obfuscator HTTP API. Companion to the jso-protector npm CLI.</description>
+    <url>https://javascriptobfuscator.com/docs/npmcli.aspx</url>
+
+    <licenses>
+        <license>
+            <name>LicenseRef-Proprietary</name>
+            <url>https://github.com/richtexteditor/jso-protector-java/blob/main/LICENSE</url>
+            <distribution>manual</distribution>
+            <comments>Proprietary licence; see the LICENSE file in this artifact.</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>JavaScript Obfuscator</name>
+            <url>https://javascriptobfuscator.com/</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/richtexteditor/jso-protector-java.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/richtexteditor/jso-protector-java.git</developerConnection>
+        <url>https://github.com/richtexteditor/jso-protector-java</url>
+    </scm>
+
+    <properties>
+        <!-- JDK 11 gives us java.net.http.HttpClient — first-class sync/async support
+             without any third-party HTTP client. Spring Boot 3 baseline is JDK 17, so
+             every modern Java shop has this. -->
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Jackson is the canonical JSON library across the JVM ecosystem. -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
