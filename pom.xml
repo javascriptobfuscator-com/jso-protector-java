@@ -17,7 +17,7 @@
     <licenses>
         <license>
             <name>LicenseRef-Proprietary</name>
-            <url>https://github.com/richtexteditor/jso-protector-java/blob/main/LICENSE</url>
+            <url>https://github.com/javascriptobfuscator-com/jso-protector-java/blob/main/LICENSE</url>
             <distribution>manual</distribution>
             <comments>Proprietary licence; see the LICENSE file in this artifact.</comments>
         </license>
@@ -31,9 +31,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/richtexteditor/jso-protector-java.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/richtexteditor/jso-protector-java.git</developerConnection>
-        <url>https://github.com/richtexteditor/jso-protector-java</url>
+        <connection>scm:git:https://github.com/javascriptobfuscator-com/jso-protector-java.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/javascriptobfuscator-com/jso-protector-java.git</developerConnection>
+        <url>https://github.com/javascriptobfuscator-com/jso-protector-java</url>
     </scm>
 
     <properties>
